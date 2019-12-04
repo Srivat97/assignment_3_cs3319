@@ -5,7 +5,7 @@
     
     there are radio buttons attached to let the user choose an individual doctor*/
 require_once './config/config.php';
-require_once ROOT_PATH . '/dbconnection.php';
+require_once ROOT_PATH . '/a3paranji/dbconnection.php';
 
 session_start();
 ?>

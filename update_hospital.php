@@ -1,7 +1,7 @@
 <?php
 /* This file was used to update a hospital name based on the user input*/
 require_once './config/config.php';
-require_once ROOT_PATH . '/dbconnection.php';
+require_once ROOT_PATH . '/a3paranji/dbconnection.php';
 
 session_start();
 ?>

@@ -4,7 +4,7 @@
 
 // below we have the configuration startup 
 require_once './config/config.php';
-require_once ROOT_PATH . '/dbconnection.php';
+require_once ROOT_PATH . '/a3paranji/dbconnection.php';
 
 session_start();
 ?>

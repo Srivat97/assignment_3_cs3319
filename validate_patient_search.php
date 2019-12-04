@@ -1,7 +1,7 @@
 <?php
 // thid file is used to check whether the user inputted ohip number exists within the databsae.
 require_once './config/config.php';
-require_once ROOT_PATH . '/dbconnection.php';
+require_once ROOT_PATH . '/a3paranji/dbconnection.php';
 
 session_start();
 

@@ -2,7 +2,7 @@
 /* In this file, all the information regarding a single doctor is displayed.
    This file is called by the display_doctors.php, where the user chose a single doctor.*/
 require_once './config/config.php';
-require_once ROOT_PATH . '/dbconnection.php';
+require_once ROOT_PATH . '/a3paranji/dbconnection.php';
 
 session_start();
 ?>
