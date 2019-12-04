@@ -33,7 +33,7 @@ session_start();
     // below we query the user selected doctor, then the doctor information is displayed to the user
     $chosen_doctor = $_POST["doctor_listing"];
 
-    $sqli_query = 'SELECT * FROM Doctor INNER JOIN Hospital ON doctor.WorkingHospital = hospital.HospitalCode WHERE doctor.LicenseNum= "'.$chosen_doctor.'"';
+    $sqli_query = 'SELECT * FROM Doctor INNER JOIN Hospital ON Doctor.WorkingHospital = Hospital.HospitalCode WHERE Doctor.LicenseNum= "'.$chosen_doctor.'"';
     $result = mysqli_query($connection, $sqli_query);
     $single_row = mysqli_fetch_array($result);
 

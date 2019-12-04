@@ -2,11 +2,11 @@
 // this file is embedded into the main webpage of the site. This file is used to query
 // all the hospitals in the database and display their information into a table format.
 
-$sqli_query = "SELECT hospital.HospitalName, doctor.FirstName, doctor.LastName, hospital.StartDate
+$sqli_query = "SELECT Hospital.HospitalName, Doctor.FirstName, Doctor.LastName, Hospital.StartDate
                FROM Hospital
                INNER JOIN Doctor
-               ON hospital.HeadDoctor = doctor.LicenseNum
-               ORDER BY doctor.LastName ASC";
+               ON Hospital.HeadDoctor = Doctor.LicenseNum
+               ORDER BY Doctor.LastName ASC";
 $result = mysqli_query($connection, $sqli_query);
 
 // generate rows in each table below

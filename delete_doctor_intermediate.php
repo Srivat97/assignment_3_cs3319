@@ -14,7 +14,7 @@ $doctor_deletion_license_num = $_POST["doctor_list"];
 
 $_SESSION["deletion_doctor"] = $doctor_deletion_license_num;
 
-// if doctor has a pactient, re-confirm deletion
+// if doctor has a patient, re-confirm deletion
 while($single_row = mysqli_fetch_array($result))
 {
     if($doctor_deletion_license_num == $single_row['DoctorID'])

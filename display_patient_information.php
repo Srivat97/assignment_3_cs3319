@@ -34,7 +34,7 @@ session_start();
     // below the user selected patient is queried  and their information is displayed
     $patient_ohip_num = $_SESSION["patient_ohip_number"];
 
-    $sqli_query_patient = 'SELECT patient.FirstName, patient.LastName FROM Patient WHERE OHIPNum= "'.$patient_ohip_num.'"';
+    $sqli_query_patient = 'SELECT Patient.FirstName, Patient.LastName FROM Patient WHERE OHIPNum= "'.$patient_ohip_num.'"';
     $result = mysqli_query($connection, $sqli_query_patient);
 
     $single_row = mysqli_fetch_array($result);
@@ -55,7 +55,7 @@ session_start();
     // variable to keep track of the number of treatments is defined below
     $treatment_count = 1;
    
-    $sqli_query_treatment = ' SELECT doctor.FirstName, doctor.LastName FROM PatientAssignment INNER JOIN doctor ON patientassignment.DoctorID = doctor.LicenseNum WHERE patientassignment.PatientID="'.$patient_ohip_num.'"';
+    $sqli_query_treatment = 'SELECT Doctor.FirstName, Doctor.LastName FROM PatientAssignment INNER JOIN Doctor ON PatientAssignment.DoctorID = Doctor.LicenseNum WHERE PatientAssignment.PatientID="'.$patient_ohip_num.'"';
     $result = mysqli_query($connection, $sqli_query_treatment);
 
     if ($result->num_rows != 0)

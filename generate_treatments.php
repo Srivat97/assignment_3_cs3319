@@ -4,12 +4,12 @@
 // the patient ohip number, first and last name are displayed. Additionally, the corresponding doctor license number
 // first and last name is also displayed.
 
-$sqli_query = "SELECT patient.FirstName AS PFirstName, patient.LastName AS PLastName,
-               doctor.FirstName AS DFirstName, doctor.LastName AS DLastName, doctor.LicenseNum, patient.OHIPNum FROM PatientAssignment
+$sqli_query = "SELECT Patient.FirstName AS PFirstName, Patient.LastName AS PLastName,
+               Doctor.FirstName AS DFirstName, Doctor.LastName AS DLastName, Doctor.LicenseNum, Patient.OHIPNum FROM PatientAssignment
                INNER JOIN Patient 
-               ON patientassignment.PatientID = patient.OHIPNum
+               ON PatientAssignment.PatientID = Patient.OHIPNum
                INNER JOIN Doctor
-               ON patientassignment.DoctorID = doctor.LicenseNum";
+               ON PatientAssignment.DoctorID = Doctor.LicenseNum";
 $result = mysqli_query($connection, $sqli_query);
 
 echo"<select id=tt name='treatment list'>";
