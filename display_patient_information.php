@@ -2,7 +2,7 @@
 /* In this file, a selected patient has their first and last name displayed. Then
    all their treatments are listed in a table.*/
 require_once './config/config.php';
-require_once ROOT_PATH . './dbconnection.php';
+require_once ROOT_PATH . '/dbconnection.php';
 
 session_start();
 ?>

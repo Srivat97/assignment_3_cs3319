@@ -1,7 +1,7 @@
 <?php
 /* In this file a user selected doctor is deleted from the database*/
 require_once './config/config.php';
-require_once ROOT_PATH . './dbconnection.php';
+require_once ROOT_PATH . '/dbconnection.php';
 
 session_start();
 ?>

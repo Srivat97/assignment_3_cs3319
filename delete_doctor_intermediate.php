@@ -2,7 +2,7 @@
 /* This file verifies whether the user selected doctor for deletion
     has any patients, based on the result, different webpages are opened*/
 require_once './config/config.php';
-require_once ROOT_PATH . './dbconnection.php';
+require_once ROOT_PATH . '/dbconnection.php';
 
 session_start();
 

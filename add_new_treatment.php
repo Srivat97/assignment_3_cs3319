@@ -2,7 +2,7 @@
 /* In this file a new treatment is added to the database*/
 // below we have the cofiguration startup
 require_once './config/config.php';
-require_once ROOT_PATH . './dbconnection.php';
+require_once ROOT_PATH . '/dbconnection.php';
 
 session_start();
 ?>

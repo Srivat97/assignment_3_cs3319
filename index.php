@@ -5,7 +5,7 @@
 
 // below we have the configuration setup 
 require_once './config/config.php';
-require_once ROOT_PATH . './dbconnection.php';
+require_once ROOT_PATH . '/dbconnection.php';
 
 session_start(); // session helps share variables between multiple pages
 ?>
@@ -137,7 +137,7 @@ session_start(); // session helps share variables between multiple pages
                     <strong><span class="user notify"> * </span></strong>
                 </label>   
                 <?php
-                require ROOT_PATH . './generate_hospitals.php'
+                require ROOT_PATH . '/generate_hospitals.php'
                 ?>
                  <label for="hp">
                     <i class="list format">(hospital code, hospital name)</i>
@@ -157,7 +157,7 @@ session_start(); // session helps share variables between multiple pages
                 <h4 class="form headings">Please select a doctor below:</h4>
                 <label for="dd">Select Doctor:</label>
                 <?php
-                require ROOT_PATH . './generate_doctors.php'
+                require ROOT_PATH . '/generate_doctors.php'
                 ?>    
                 <label for="hp">
                     <i class="list format">(Doctor License Number, Doctor name)</i>
@@ -180,7 +180,7 @@ session_start(); // session helps share variables between multiple pages
                 <label for="shc">Select Hospital Code of the Hospital to Rename: 
                 </label>
                 <?php
-                    require ROOT_PATH . './generate_hospital_code.php'
+                    require ROOT_PATH . '/generate_hospital_code.php'
                 ?>
                 <br />
                 <br />
@@ -208,7 +208,7 @@ session_start(); // session helps share variables between multiple pages
                 </thead>
                 <tbody id="hospital_listing_body">
                 <?php
-                require ROOT_PATH . './list_hospital_information.php'
+                require ROOT_PATH . '/list_hospital_information.php'
                 ?>
                 </tbody>
             </table>    
@@ -256,14 +256,14 @@ session_start(); // session helps share variables between multiple pages
                 <h4 class="form headings">Please select a patient and a doctor below to add a new treatment:</h4>
                 <label for="pp">Select Patient:</label>
                 <?php
-                require ROOT_PATH . './generate_patients.php'
+                require ROOT_PATH . '/generate_patients.php'
                 ?>    
                 <label for="pp">
                     <i class="list format">(Patient OHIP, Patient name)</i>
                 </label>
                 <label for="dd">Select Doctor:</label>
                 <?php
-                require ROOT_PATH . './generate_doctors.php'
+                require ROOT_PATH . '/generate_doctors.php'
                 ?>    
                 <label for="dd">
                     <i class="list format">(Doctor License Number, Doctor name)</i>
@@ -283,7 +283,7 @@ session_start(); // session helps share variables between multiple pages
                 <h4 class="form headings">Please select a treatment to remove:</h4>
                 <label for="tt">Select Treatment:</label>
                 <?php
-                require ROOT_PATH . './generate_treatments.php'
+                require ROOT_PATH . '/generate_treatments.php'
                 ?>    
                 <label for="tt">
                     <i class="list format">(Patient OHIP, Patient name -- Doctor License, Doctor Name)</i>   
@@ -305,7 +305,7 @@ session_start(); // session helps share variables between multiple pages
                 </thead>
                 <tbody id="doctor_listing_body">
                 <?php
-                require ROOT_PATH . './no_patient_doctors.php'
+                require ROOT_PATH . '/no_patient_doctors.php'
                 ?>
                 </tbody>
             </table>    

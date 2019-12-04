@@ -2,7 +2,7 @@
 /* this file was used to verify whether the new doctor license number already exists within the database.
     If the licens number exists, then go back to the main page and let the user know. Otherwise continue to add the new doctor.*/
 require_once './config/config.php';
-require_once ROOT_PATH . './dbconnection.php';
+require_once ROOT_PATH . '/dbconnection.php';
 
 session_start();
 
