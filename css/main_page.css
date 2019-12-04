@@ -1,0 +1,281 @@
+/* this is a global css file for all webpages*/
+
+/* below we set the colour of the webpages and fonts*/
+body {
+    background-color: #f1e8b1;
+    background-color: hsla(52,69%, 82%, 1);
+    font-family: Arial, Helvetica, sans-serif!important;
+}
+
+
+/* styling the main headers in each page*/
+#main_title {
+    color:  #3560a7;
+    width: 750px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #3560a7;
+    padding: 10px 10px 10px 10px;
+}
+
+
+/* stylin the sub headings*/
+.user.choices.headings{
+    color: #005694;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+
+/* style the form headings in each page*/
+.form.headings{
+    text-decoration: underline;
+}
+
+.no.treatments{
+    font-size: 20px;
+}
+
+
+/* style the legend components of each form*/
+legend{
+    font-weight: bold;
+    background-color: #e6f10e;
+    background-color: hsla(63, 89%, 50%, 1);
+    border: solid 2px black;
+    padding: 10px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+
+/* styling the form backround and edges*/
+fieldset{
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border: solid;
+    border-width: 2px;
+    background-color: #aef4ee;
+    background-color: hsla(175, 76%, 82%, 0.88);
+}
+
+/*Stylign the sizes of all the various contains, which hold the forms*/
+#doctors_list_alpha{
+    width: 22%;
+}
+
+#doctors_list_by_license{
+    width: 23%;
+}
+
+#add_new_doctor{
+    width: 28%;
+}
+
+#delete_doctor{
+    width: 33%;
+}
+
+#update_hospital_name{
+    width: 25%;
+}
+
+#display_patient_info{
+    width: 25%;
+}
+
+#treatment_assignment{
+    width: 63%;
+}
+
+#treatment_deletion{
+    width: 55%;
+}
+
+#doctor_deletion{
+    width: 64%;
+}
+
+#stop_doctor_deletion{
+    width: 25%;
+}
+
+/* Styling the error messages to the user*/
+.user.notify{
+    font-size: 20px;
+    color: #ff0a0a;
+    color: hsla(360, 100%, 53%, 1);
+}
+
+.error_message{
+    line-height: 4em;
+    background-color: #f34f4f;
+    background-color: hsla(360, 87%, 63%, 0.89);
+    color: #ffffff;
+    font-size: 15px;
+    white-space: nowrap;
+    border-style: groove;
+    border-color: #a70c0c;
+    border-color: hsla(360, 87%, 35%, 1);
+    padding: 10px;
+}
+
+/* Styling the form parameters*/
+input[type='submit']{
+    cursor: pointer;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    font-family: roboto-slab;
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold;
+    border: solid;
+    border-width: 1px;
+    border-color: #069925;
+    text-shadow: 0px 1px 1px #ffffff;
+    border-bottom: 2px solid;
+    background-color: #4ef973;
+}
+
+input[type="submit"]:focus{
+    outline: none;
+}
+
+input[type='radio']{
+    width: 2em;
+}
+
+input[type='text']{
+    padding: 5px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    background-color: #b5bbcf;
+    background-color: hsla(226, 21%, 76%, 1);
+}
+
+input[type='text']:focus{
+    background-color: #ffffff;
+    border: groove;
+    border-width: 2px;
+    border-color: #00e025;
+    outline: none;
+}
+
+input[type='date']#ld{
+    width:33%;
+    background: transparent;
+    background-color: #b5bbcf;
+    background-color: hsla(226, 21%, 76%, 1);
+}
+
+input[type='date']#nld{
+    width:27%;
+    background: transparent;
+    background-color: #b5bbcf;
+    background-color: hsla(226, 21%, 76%, 1);
+}
+
+select{
+    background: transparent;
+    background-color: #b5bbcf;
+    background-color: hsla(226, 21%, 76%, 1);
+}
+
+/* Styling the tables*/
+table#hospital_listing{
+    width: 1000px;
+}
+
+table#doctor_listing{
+    width: 600px;
+}
+
+table#doctor_listing_after_license_date{
+    width: 900px;
+}
+
+table#patient_treatment_listing{
+    width: 800px;
+}
+
+th{
+    font-size: 20px;
+    border-top: 1px solid #005694;
+    border-bottom: 4px solid #005694;   
+    padding-top: 5px;
+    padding-bottom: 5px;  
+}
+
+td{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #8fd0ff;
+}
+
+
+/* Styling containers in webpages other than the main webpage*/
+#listing_all_doctors{
+    width: 50%;
+}
+
+#single_doctor_list{
+    background-color: #aef4ee;
+    width: 18%;
+    padding: 10px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border: solid;
+    border-width: 2px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#hospital_name_updated{
+    background-color: #aef4ee;
+    width: 25%;
+    padding: 10px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border: solid;
+    border-width: 2px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#patient_information_displayed{
+    background-color: #aef4ee;
+    width: 13%;
+    padding: 10px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border: solid;
+    border-width: 2px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#treatment_added{
+    background-color: #aef4ee;
+    width: 25%;
+    padding: 10px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border: solid;
+    border-width: 2px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
